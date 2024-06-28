@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do list website</title>
+    <link rel="stylesheet" href="/stylesheet/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="todo-apps">
+            <div class="todo-app">
+                <h2>To-Do List(SE Factory) <img src="/images/icon.png" ></h2>
+                <div class="row">
+                    <input type="text" id="input-box1" placeholder="Add your text">
+                    <input type="date" id="date-box1">
+                    <input type="time" id="time-box1">
+                    <input type="text" id="assignee-box1" placeholder="Assignee">
+                </div>
+                <button onclick="addTask('input-box1', 'list-container1', 'date-box1', 'time-box1', 'assignee-box1')">Add</button>
+                <ul id="list-container1"></ul>
+            </div>
+            <div class="todo-app">
+                <h2>To-Do List (During day)<img src="/images/icon.png" ></h2>
+                <div class="row">
+                    <input type="text" id="input-box2" placeholder="Add your text">
+                    <input type="date" id="date-box2">
+                    <input type="time" id="time-box2">
+                    <input type="text" id="assignee-box2" placeholder="Assignee">
+                </div>
+                <button onclick="addTask('input-box2', 'list-container2', 'date-box2', 'time-box2', 'assignee-box2')">Add</button>
+                <ul id="list-container2"></ul>
+            </div>
+        </div>
+    </div>
+    <script src="/script/jvasc.js"></script>
+</body>
+</html>
